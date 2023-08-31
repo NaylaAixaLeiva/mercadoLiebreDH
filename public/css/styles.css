@@ -310,8 +310,14 @@ article {
     }
 
     /*--- MAIN ---*/
-    .main-product {
-        display: block;
+    .main-articles{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    article{
+        width: 50%;
     }
 
     /*---------------- DESKTOP ----------------*/
@@ -325,6 +331,16 @@ article {
             width: 20%;
         }
         /*--- MAIN ---*/
+        .main-articles{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        article{
+            width: 30%;
+        }
+
         #main-icon-delivery:hover{
             cursor: pointer;
             transform:rotate(-90deg);

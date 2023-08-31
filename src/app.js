@@ -8,8 +8,9 @@ const path = require('path');
 app.use(express.static('public'))
 
 //Escuchar el servidor
-app.listen(3000, ()=>{
-    console.log('Servidor corriendo en http://localhost:3000');
+const port = process.env.PORT || 3000;
+app.listen(port, ()=>{
+    console.log('Servidor corriendo en el puerto ${port}');
 });
 
 //---Rutas---
