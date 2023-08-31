@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}

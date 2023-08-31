@@ -1,0 +1,462 @@
+@import url(normalize.css);
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+/*Mobile First*/
+
+.header-box {
+    background-color: var(--amarillo);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: black;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+/*---------------- CELULAR ----------------*/
+/*--- HEADER ---*/
+.header-logo {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.header-form-search {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-search {
+    font-family: 'Roboto';
+    color: var(--grisOscuro);
+    font-size: 12px;
+    width: 80%;
+    /*border-radius: 5px;*/
+    padding-left: 5px;
+    border: white;
+}
+
+#header-button-search {
+    padding: 2px;
+    width: 20%;
+    background-color: white;
+    border: white;
+    border-left: var(--grisClaro) solid 1px;
+    /*border-radius: 5px;*/
+}
+
+#header-icon-glass {
+    width: 20px;
+    align-items: center;
+    color: var(--grisOscuro);
+}
+
+.header-content-p {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-bottom: 15px;
+}
+
+#header-icon-p {
+    font-size: 12px;
+    width: 20px;
+}
+
+.header-p {
+    font-family: 'Roboto';
+    width: 220px;
+}
+
+.header-navegation-bar {
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+    cursor: pointer;
+
+}
+
+.header-content-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-link-1 {
+    color: black;
+}
+
+.header-link-2 {
+    color: black;
+    width: 90px;
+}
+
+.header-link-3 {
+    color: black;
+    width: 36px;
+}
+
+.header-link-4 {
+    color: black;
+    width: 70px;
+}
+
+#header-icon {
+    font-size: 12px;
+    padding: 5px;
+    color: black;
+    width: 20px;
+}
+
+.burger-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#header-icon-menu {
+    font-size: 20px;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--celeste);
+    color: white;
+    width: 15%;
+    border-radius: 5px;
+    border: solid 1px var(--celeste);
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*--- MAIN ---*/
+main {
+    background-color: var(--grisClaro);
+    /* %100 de ancho - %10 de padding = %90 de ancho y queda centrado*/
+    width: 100%;
+    padding: 10%;
+
+}
+
+.main-title {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article {
+    margin: 10px;
+}
+
+.main-image-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 30px;*/
+    background-color: white;
+}
+
+.main-box-product {
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 30px;
+    font-weight: bolder;
+    position: relative;
+}
+
+#main-icons {
+    color: var(--verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.main-price-discount {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.main-price {
+    font-size: 18px;
+    color: black;
+    width: 30%;
+}
+
+.main-discount {
+    color: var(--verde);
+    width: 70%;
+    font-size: 16px;
+}
+
+.main-product {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: var(--grisOscuro);
+    display: none;
+}
+
+/*--- FOOTER ---*/
+
+.footer-box {
+    background-color: white;
+    text-align: center;
+}
+
+.footer-list {
+    color: var(--grisOscuro);
+    font-size: 12px;
+}
+
+.footer-content {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#footer-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-p {
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/*---------------- TABLET ----------------*/
+@media(min-width: 361px) {
+
+    /*--- HEADER ---*/
+
+    .header-logo{
+        width: 30%;
+    }
+
+    .header-form-search {
+        max-width: 30%;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    .header-content-p{
+        width: 40%;
+        margin: 0%;
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+
+    .header-navegation-bar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-list-1, .header-list-2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 50%;
+        margin-top: 10px;
+        height: 30px;
+        font-weight: bolder;
+    }
+    
+    .header-list-2{
+        margin-left: 20%;
+    }
+
+    .header-content{
+        width: 25%;
+        margin-top: 10px;
+        justify-content: left;
+    }
+
+    .header-content-2{
+        width: 30%;
+        justify-content: end;
+    }
+    .header-link-1, .header-link-2, .header-link-3, .header-link-4 {
+        font-size: 11px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    /*--- MAIN ---*/
+    .main-product {
+        display: block;
+    }
+
+    /*---------------- DESKTOP ----------------*/
+    @media(min-width: 769px) {
+        /*--- HEADER ---*/
+        .header-content{
+            width: 25%;
+        }
+    
+        .header-content-2{
+            width: 20%;
+        }
+        /*--- MAIN ---*/
+        #main-icon-delivery:hover{
+            cursor: pointer;
+            transform:rotate(-90deg);
+            transition-delay: 0.1s;
+        }
+
+        article:hover{
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+
+        article:hover{
+            .main-product{
+                display:block
+            }
+            
+        }
+
+        /*--- FOOTER ---*/
+        .footer-list{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+           margin: auto;
+        }
+
+        .footer-content{
+            width: 34%;
+        }
+
+        .footer-p{
+            display: block;
+        }
+        #footer-icon:hover{
+            cursor: pointer;
+            color: pink;
+        }
+    }
+
+}
+
+/*-------------------------------------REGISTER------------------------------------------*/
+.register-form{
+    background-color: var(--grisClaro);
+    margin: auto;
+    width: 60%;
+}
+
+.input-register{
+    text-align: center;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: black ;
+    font-size: 16px;
+}
+
+.register-title{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 18px;
+    padding-left: 20px;
+}
+
+.register-name-surname, .register-name-user, .register-email-user, .register-date, .register-domicile, .register-profile, .register-interest, .register-file, .password-register, .button-register-box, .button-register{
+    padding: 20px;
+}
+.file-register{
+    font-size: 16px;
+    font-family: 'Roboto';
+    border-radius: 3px;
+}
+
+#password{
+    margin-top: 20px;
+}
+
+.label-register{
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.profile-input, .interest-input{
+    width: 20px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.button-register{
+    font-family: 'Roboto';
+    font-size: 16px;
+    background-color: var(--celeste);
+    color: white;
+    padding: 10px;
+    border: solid 1px var(--celeste);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/*-------------------------------------LOGIN------------------------------------------*/
+
+
+.login-form{
+    background-color: var(--grisClaro);
+    margin: auto;
+    width: 80%;
+}
+
+.login-name-user, .login-password-user, .button-login-box{
+    padding: 20px;
+}
+
+.name-user-input, .password-user-input{
+    text-align: center;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: black ;
+    font-size: 16px;
+}
+
+a .button-login{
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 16px;
+    background-color: var(--celeste);
+    color: white;
+    padding: 10px;
+    border: solid 1px var(--celeste);
+    border-radius: 5px;
+}
+
+a .button-login:hover{
+    background-color: #0022AA;
+}
